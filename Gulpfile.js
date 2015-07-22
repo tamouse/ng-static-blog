@@ -9,8 +9,8 @@ var tpl     = require('gulp-template');
 var rename  = require('gulp-rename');
 
 /*
-map of paths for using with the tasks below
- */
+  map of paths for using with the tasks below
+*/
 var paths = {
   entry: 'client/app/app.js',
   app: ['client/app/**/*.{js,styl,html}', 'client/styles/**/*.styl'],
@@ -51,16 +51,16 @@ gulp.task('serve', function() {
 });
 
 /*
-simple task to copy over needed files to dist
- */
+  simple task to copy over needed files to dist
+*/
 gulp.task('copy', function() {
   return gulp.src(paths.toCopy, { base: 'client' })
     .pipe(gulp.dest(paths.dest));
 });
 
 /*
-task to watch files for changes and call build and copy tasks
- */
+  task to watch files for changes and call build and copy tasks
+*/
 gulp.task('watch', function() {
   gulp.watch(paths.app, ['build', browser.reload]);
   gulp.watch(paths.toCopy, ['copy', browser.reload]);

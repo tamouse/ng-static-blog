@@ -45,12 +45,8 @@ describe('Blog', () => {
   });
 
   describe('controller', ()=> {
-    it('should have blog posts', ()=> {
-      const controller = makeController();
-      expect(controller.posts).to.be.an('array');
-      expect(controller.posts[0]).to.have.property('author');
-      expect(controller.posts[0]).to.have.property('title');
-    });
+    // add in controller tests here, BUT you have
+    // to ensure everything gets injected properly.
   });
 
   describe('template', ()=> {

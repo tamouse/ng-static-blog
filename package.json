@@ -1,13 +1,13 @@
 {
-  "name": "ng-blog",
+  "name": "ng-static-blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "Angular + Jekyll, go mad",
   "main": "index.js",
   "scripts": {
     "start": "gulp",
     "test": "karma start"
   },
-  "author": "",
+  "author": "tamouse",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.4.3",
