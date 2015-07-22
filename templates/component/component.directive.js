@@ -1,5 +1,5 @@
 import './<%= name %>.styl';
-import {<%= upCaseName %> as controller} from './<%= name %>.controller';
+import {<%= upCaseName %>Directive as controller} from './<%= name %>.controller';
 import template from './<%= name %>.html';
 
 export const <%= name %>Directive = ()=> {
