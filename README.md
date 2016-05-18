@@ -26,10 +26,12 @@ Install these globally
 
 ### Start up `json-server`
 
-    $ json-server -p 3030 -H 0.0.0.0 -w db.json
+    $ nohup json-server -p 3030 -H 0.0.0.0 -w db.json </dev/null 1>json-server.log 2>&1 &
 
 The port 3030 can be modified (but should always match) the port given
 in `client/app/shared/api.js` `url` field.
+
+This should really be done in the gulp file.
 
 ### Run `gulp`
 
